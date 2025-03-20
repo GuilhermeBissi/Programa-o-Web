@@ -1,37 +1,37 @@
-body{
+body {
     font-family: Arial;
     background-color: #ffffff;
 }
 
-.menu{
+.menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: inline-flex;
 }
 
-.menu li{
+.menu li {
     position: relative;
 }
 
-nav{
-    background-color:#008cff;
+nav {
+    background-color: #008cff;
     text-align: center;
 }
 
-.menu li a{
+.menu li a {
     display: block;
     padding: 15px 20px;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.menu li a:hover{
-    background-color:#069c90;
-    transition:ease;
+.menu li a:hover {
+    background-color: #069c90;
+    transition: ease;
 }
 
-.sub{
+.sub {
     display: none;
     position: absolute;
     background-color: #069c90;
@@ -40,14 +40,14 @@ nav{
     margin: 0;
 }
 
-.menu li:hover .sub{
+.menu li:hover .sub {
     display: block;
 }
 
-.sub li a{
+.sub li a {
     padding: 10px 15px;
 }
 
-.sub li a:hover{
-    background-color:#008cff;
+.sub li a:hover {
+    background-color: #008cff;
 }
