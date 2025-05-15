@@ -41,7 +41,7 @@
                         <li><a href="about.html" class="active">Sobre</a></li>
                         <li><a href="deals.html">Ofertas</a></li>
                         <li><a href="reservation.html">Reservas</a></li>
-                        <li><a href="reservation.html">Reserve Já</a></li>
+                        <li><a href="contact.html">Contato</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -102,3 +102,96 @@
                 <div class="item">
                   <div class="thumb">
                     <img src="assets/images/cities-04.jpg" alt="Tóquio">
+                    <h4>Tóquio</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="more-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="left-image">
+            <img src="assets/images/about-left-image.jpg" alt="Sobre Nós">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>Nossa História</h2>
+            <p>Fundada em 2005, a Tropical Travel nasceu da paixão por viagens e da vontade de proporcionar experiências únicas aos nossos clientes.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="info-item">
+                <h4>+15.000</h4>
+                <span>Clientes Satisfeitos</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-item">
+                <h4>+200</h4>
+                <span>Destinos Disponíveis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Pronto para viajar?</h2>
+          <h4>Faça sua reserva clicando no botão</h4>
+        </div>
+        <div class="col-lg-4">
+          <div class="border-button">
+            <a href="reservation.html">Reserve Agora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 Tropical Travel. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    // Corrige o menu ativo
+    document.addEventListener('DOMContentLoaded', function() {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.parentElement.classList.remove('active');
+            if (link.getAttribute('href') === currentPage) {
+                link.parentElement.classList.add('active');
+            }
+        });
+    });
+  </script>
+</body>
+</html>

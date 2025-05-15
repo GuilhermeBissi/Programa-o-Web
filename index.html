@@ -41,7 +41,7 @@
                         <li><a href="about.html">Sobre</a></li>
                         <li><a href="deals.html">Ofertas</a></li>
                         <li><a href="reservation.html">Reservas</a></li>
-                        <li><a href="reservation.html">Reserve Já</a></li>
+                        <li><a href="contact.html">Contato</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -391,6 +391,19 @@
       clearInterval(bannerTimer);
       bannerTimer = setInterval(bannerSwitcher, 5000)
     });
+  </script>
+
+<script>
+  // Corrige o menu ativo
+  document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.nav a').forEach(link => {
+          link.parentElement.classList.remove('active');
+          if (link.getAttribute('href') === currentPage) {
+              link.parentElement.classList.add('active');
+          }
+      });
+  });
   </script>
 
 </body>

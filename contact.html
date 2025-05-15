@@ -97,3 +97,18 @@
     <div class="contact-form">
         <div class="container">
             <div class="row">
+
+
+    <script>
+        // Corrige o menu ativo
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll('.nav a').forEach(link => {
+                link.parentElement.classList.remove('active');
+                if (link.getAttribute('href') === currentPage) {
+                    link.parentElement.classList.add('active');
+                }
+            });
+        });
+        </script>
+</body>
